@@ -18,7 +18,7 @@ func PolynomialRegression(x []float64, y []float64, maxDeg int) (coef []float64,
 		return nil, fmt.Errorf("degree must be at least equal to the number of samples")
 	}
 
-	X, err := vandermonde.Vandermonde(x, 0, 0)
+	X, err := vandermonde.VandermondeWindow(x, 0, maxDeg + 1, 0)
 	if err != nil { return nil, err }
 
 	var Theta mat.Dense
