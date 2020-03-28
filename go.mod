@@ -1,4 +1,4 @@
-module github.com/AnthonyHewins/poly_regression
+module github.com/AnthonyHewins/polyfit
 
 go 1.13
 
